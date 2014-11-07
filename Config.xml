@@ -21,7 +21,7 @@
         
         <preference name="DisallowOverscroll" value="true"/>
         
-        <icon src="icon.png" />
-		<gap:splash src="splash.jpg" />
+        <icon src="images/icon.png" />
+		<gap:splash src="splash.png" />
 		
     </widget>
