@@ -19,9 +19,21 @@
         
         <access origin="*" />
         
-        <preference name="DisallowOverscroll" value="true"/>
+        <preference name="SplashScreen" value="splash" />
+        <preference name="show-splash-screen-spinner" value="true" />
+    	<preference name="auto-hide-splash-screen" value="false" />
+    	<preference name="SplashScreenDelay" value="50000" />
+        
+        <gap:plugin name="org.apache.cordova.device" />
+        <gap:plugin name="org.apache.cordova.splashscreen" />
         
         <icon src="images/icon.png" />
-		<gap:splash src="splash.png" />
+        
+        <gap:splash src="splash.png" />
+        <gap:splash gap:platform="android" gap:qualifier="port-ldpi" src="images/splash.png" />
+    	<gap:splash gap:platform="android" gap:qualifier="port-mdpi" src="images/splash.png" />
+   	 	<gap:splash gap:platform="android" gap:qualifier="port-hdpi" src="images/splash.png" />
+    	<gap:splash gap:platform="android" gap:qualifier="port-xhdpi" src="images/splash.png" />
+        
 		
     </widget>
